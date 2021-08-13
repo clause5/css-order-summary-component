@@ -1,0 +1,131 @@
+
+/* CSS Normalize */
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+/* Box-sizing border-box */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+.attribution {margin-top: 3rem;font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    height: 100vh;
+    background: url('../images/pattern-background-desktop.svg'), hsl(225, 100%, 94%);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    color: hsl(224, 23%, 55%);
+    font-family: 'Red Hat Display', sans-serif;
+}
+.container{
+    height: 80vh;
+    display: flex;
+    flex-basis: 500px;
+    flex-shrink: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 25px;
+    
+        box-shadow: 0px -5px 89px 5px rgba(114,128,167, 0.3);
+    -webkit-box-shadow: 0px 5px 21px 5px rgba(114,128,167, 0.3);
+    -moz-box-shadow: 0px 5px 21px 5px rgba(114,128,167, 0.3);
+}
+.header{
+    min-height: 35%;
+    background-image: url('../images/illustration-hero.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-top-left-radius : 25px;
+    border-top-right-radius: 25px;;
+}
+.content{
+    display: flex;
+    width: 80%;
+    height: 55%;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+.content > p{
+    width: 70%;
+    margin: 0;
+}
+h1{
+    margin: 0;
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+span {
+    color: hsl(223, 47%, 23%);
+    font-weight: 700;
+}
+.plan{
+    display: flex;
+    width: 100%;
+    height: 6rem;
+    justify-content: space-around;
+    align-items: center;
+    background-color:rgba(224,232,255,.3);
+    border-radius: 10px;
+}
+.selected{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    align-items: center;
+}
+img[alt="music icon"]{
+    width: 50px;
+    height: 50px;
+}
+button{
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: hsl(245, 75%, 52%);
+    color: hsl(225, 100%, 98%);
+    font-weight: bolder;
+    box-shadow: 0px -5px 89px 5px rgba(114,128,167, 0.3);
+}
+button:hover{ background-color: rgba(56,41,224,.7)}
+#change{
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
+    cursor: pointer;
+}
+#change:hover{
+    text-decoration: none;
+    color: rgba(56,41,224,.7)
+}
+
+#cancel:link {
+    text-decoration: none;
+    font-weight: 900;
+}
+
+#cancel{ color: hsl(224, 23%, 55%) }
+
+#cancel:hover{ color: hsl(223, 47%, 23%) }
+
+@media all and (min-width:360px) and (max-width:560px) {
+    body{ font: 11px }
+
+    .container{ flex-basis: 350px }
+   
+    h1{ font-size: 24px }
+
+    .content > p{ width: 90% }
+
+    .selected{ width: 60% }
+}
