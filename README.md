@@ -28,5 +28,5 @@ The designs were created to the following widths:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/clause5/css-order-summary-component)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/clause5/css-order-summary-component]
+- Live Site URL: [https://clause5.github.io/css-order-summary-component/]
